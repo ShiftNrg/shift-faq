@@ -42,8 +42,7 @@ $maintenance      = false;
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff"> 
  
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> 
     <!-- Plugins CSS -->
@@ -127,6 +126,17 @@ $maintenance      = false;
 
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                 
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Search</h2>
+                        <div class="content">
+                            <form id="search" action="" method="POST">
+                                <input type="hidden" name="hidden" />
+                                <input type="text" name="search" placeholder="Enter your search words here.." autofocus/>
+                            </form>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
                 <aside class="info aside section">
                     <div class="section-inner">
                         <h2 class="heading sr-only">Information</h2>

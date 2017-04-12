@@ -1,6 +1,6 @@
 /* ======= Base ======= */
 body {
-  font-family: 'Lato', arial, sans-serif;
+  font-family: 'Roboto', arial, sans-serif;
   color: #434343;
   background: #dae3e7;
   font-size: 16px;
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #778492;
 }
@@ -36,7 +36,7 @@ a.btn {
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
-  font-family: 'Montserrat', arial, sans-serif;
+  font-family: 'Roboto', arial, sans-serif;
   padding: 8px 16px;
   font-weight: bold;
 }
@@ -126,7 +126,7 @@ iframe {
 }
 .header .profile-content .desc {
   color: #778492;
-  font-family: "Lato", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
   margin-top: 0;
@@ -237,7 +237,7 @@ iframe {
   overflow: hidden;
 }
 .latest .featured-image .ribbon .text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   left: -8px;
   top: 18px;
@@ -360,7 +360,7 @@ iframe {
   color: #ccd1d6;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Lato", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   position: absolute;
   right: 0;
   top: 0;
@@ -414,7 +414,7 @@ iframe {
   margin-top: 0;
 }
 .education .item .university {
-  font-family: "Lato", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 13px;
   color: #999999;
   font-weight: 600;
@@ -535,10 +535,16 @@ iframe {
 }
 
 /* ---- EXTRA CSS BY @JAN ---- */
-.content h4 {
-  padding-top: 6px;
-}
-#login {}
-#login input[type='text'], #login input[type='password'] {
-  margin-bottom: 6px;
+.content h4 { padding-top: 6px; }
+#search { margin-bottom: 6px; }
+#search input[type='text']{
+  width: 100%;
+  display: inline-block;
+  border:1px solid #CCCCCC;
+  padding:6px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
