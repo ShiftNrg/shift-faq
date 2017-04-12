@@ -109,7 +109,7 @@ $maintenance      = false;
                                     if (json_last_error() === JSON_ERROR_NONE) {
                                         // JSON is valid
                                         foreach($json as $item){
-                                            echo "<p>".$item['question']."</p>";
+                                            echo "<p><strong>".$item['question']."</strong></p>";
                                             echo "<p>".$item['answer']."</p>";
                                         }
                                     }else{
