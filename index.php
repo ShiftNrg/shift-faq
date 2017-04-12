@@ -102,10 +102,21 @@ $maintenance      = false;
                         <h2 class="heading">F.A.Q.</h2>
                         <div class="content">
                             <?php 
-                                $ini = json_decode("faq.json", true);
-                                foreach($ini as $item){
-                                    echo "<p>".$item['question']."</p>";
-                                    echo "<p>".$item['answer']."</p>";
+                                $file = "faq.json";
+                                if(file_exists($file)){
+                                    $json = file_get_contents($file);
+                                    $json = json_decode($json, true);
+                                    if (json_last_error() === JSON_ERROR_NONE) {
+                                        // JSON is valid
+                                        foreach($json as $item){
+                                            echo "<p>".$item['question']."</p>";
+                                            echo "<p>".$item['answer']."</p>";
+                                        }
+                                    }else{
+                                        echo "No valid JSON file..";
+                                    }
+                                }else{
+                                    echo "No questions found..";
                                 }
                             ?>
                         </div><!--//content-->
