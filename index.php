@@ -101,49 +101,13 @@ $maintenance      = false;
                     <div class="section-inner">
                         <h2 class="heading">F.A.Q.</h2>
                         <div class="content">
-                            
-                            <p>
-                                <h4>How many times do I have to vote someone?</h4>
-                            </p>
-                            <p>
-                                With the current code base, every delegate can vote: 
-                                <ul type="disc">
-                                    <li>101 times in total</li>
-                                    <li>max. 33 votes per transaction</li>
-                                    <li>give 1 vote per delegate</li>
-                                </ul>
-                            </p>
-                            <!-- _________________________________________________ -->
-                            <p>
-                                <h4>I want to forge as well. What do I need to do?</h4>
-                            </p>
-                            <p>
-                                To forge blocks (and therefore earn Shift) you have to run a Shift node (delegate).<br />
-                                Learn how to set it up and become a delegate at one of these two websites:
-                                <ul type="disc">
-                                    <li><a href="https://www.shiftnrg.eu/" target="_blank">www.shiftnrg.eu</a></li>
-                                    <li><a href="https://www.shiftnrg.nl/" target="_blank">www.shiftnrg.nl</a></li>
-                                </ul>
-                            </p>
-                            <!-- _________________________________________________ -->
-                            <p>
-                                <h4>Second passphrase?</h4>
-                            </p>
-                            <p>
-                                To add an extra security layer to your wallet, you can create a second passphrase.<br />
-                                Log in to your wallet and click on the three dots in the top right of the page to open up the menu. Then click on "2nd passphrase".
-                            </p>
-                            <p>
-                                After that you will see a popup like the one when you created your wallet. Save the second passphrase in a safe place and confirm it. The costs of a second passphrase are 5 SHIFT. 
-                            </p>
-                            <!-- _________________________________________________ -->
-                            <p>
-                                <h4>Who's on your team?</h4>
-                            </p>
-                            <p>
-                                Go to <a href="https://www.shiftnrg.org/theteam/" target="_blank">www.shiftnrg.org/theteam</a> to see who's on the team.
-                            </p>
-
+                            <?php 
+                                $ini = json_decode("faq.json", true);
+                                foreach($ini as $item){
+                                    echo "<p>".$item['question']."</p>";
+                                    echo "<p>".$item['answer']."</p>";
+                                }
+                            ?>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
